@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="actividad1"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -20,18 +21,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ListView
+        <Button
+            android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="205dp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="205dp" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:contentDescription="@string/Spinner" />
+            android:layout_height="wrap_content"
+            android:onClick="actividad1"
+            android:text="@string/listview" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
